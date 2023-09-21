@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://jmix.io/schema/flowui/view"
+      title="msg://sandboxView.title">
+    <data readOnly="true">
+        <collection id="usersDc" class="ru.itsyn.sandbox.entity.User">
+            <fetchPlan extends="_instance_name"/>
+            <loader id="usersDl">
+                <query>select e from sb_User e order by e.username</query>
+            </loader>
+        </collection>
+    </data>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+    </facets>
+    <layout>
+        <hbox width="100%">
+            <entityComboBox id="user" width="400px" metaClass="sb_User" itemsContainer="usersDc">
+                <actions>
+                    <action id="lookup" type="entity_lookup"/>
+                    <action id="open" type="entity_open"/>
+                    <action id="clear" type="entity_clear"/>
+                </actions>
+            </entityComboBox>
+        </hbox>
+    </layout>
+</view>

@@ -3,6 +3,7 @@
 
     <menu id="application" title="msg://ru.itsyn.sandbox/menu.application.title" opened="true">
         <item view="sb_User.list" title="msg://ru.itsyn.sandbox.view.user/UserListView.title"/>
+        <item view="sb_SandboxView" title="msg://ru.itsyn.sandbox.view.sandbox/sandboxView.title"/>
     </menu>
 
 </menu-config>
