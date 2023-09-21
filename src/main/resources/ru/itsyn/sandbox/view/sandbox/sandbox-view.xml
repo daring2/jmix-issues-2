@@ -14,13 +14,14 @@
     </facets>
     <layout>
         <hbox width="100%">
-            <entityComboBox id="user" width="400px" metaClass="sb_User" itemsContainer="usersDc">
+            <entityComboBox id="userField" width="300px" metaClass="sb_User" itemsContainer="usersDc">
                 <actions>
                     <action id="lookup" type="entity_lookup"/>
                     <action id="open" type="entity_open"/>
                     <action id="clear" type="entity_clear"/>
                 </actions>
             </entityComboBox>
+            <button id="removeActions" text="Remove actions"/>
         </hbox>
     </layout>
 </view>
