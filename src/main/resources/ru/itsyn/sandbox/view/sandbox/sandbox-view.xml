@@ -12,6 +12,10 @@
     <facets>
         <dataLoadCoordinator auto="true"/>
     </facets>
+    <actions>
+        <action id="testAction" text="Test action"
+                shortcutCombination="CONTROL-ENTER"/>
+    </actions>
     <layout>
         <hbox width="100%">
             <entityComboBox id="userField" width="300px" metaClass="sb_User" itemsContainer="usersDc">
@@ -22,6 +26,9 @@
                 </actions>
             </entityComboBox>
             <button id="removeActions" text="Remove actions"/>
+        </hbox>
+        <hbox width="100%">
+            <button action="testAction"/>
         </hbox>
     </layout>
 </view>
